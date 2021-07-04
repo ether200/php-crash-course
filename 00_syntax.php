@@ -7,8 +7,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
+<!-- Php is embedded into html by default, if you change the type to php you can use it's func -->
 <body>
-Hello World
+<?php
+  echo "hello world";
+  echo " and PHP";
+?>
+
+<?php
+  echo '<br>';
+  echo "hello from another tag";
+?>
 <!--Echo HTML tags-->
 </body>
 </html>
