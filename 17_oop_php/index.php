@@ -1,22 +1,15 @@
 <?php
+require_once 'includes/config.php';
+require_once 'includes/database.php';
 
-# Define class
-class User {
+// Connect to a database using PDO
+# PHP Data objects
+# Lightweight, consistent interface
+# Data-access abstraction
 
-    // Properties
-    public $name;
+?>
 
-    // Methods
-    public function sayHello() {
-        return "Hello " . $this->name;
-    }
-}
-
-// Instantiate user object from "User class"
-$user = new User();
-$user->name = 'Ivanoff'; // Since it's public it can be modified
-// echo $user->name; // Access to props in object
-echo "<br>";
-echo $user->sayHello();
-
+<?php
+    $object = new Database;
+    echo $object->connect();
 ?>
